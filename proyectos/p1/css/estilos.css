@@ -1,0 +1,114 @@
+/*Martin Cabrera 185091
+Santiago Vairo 244023*/
+
+main{
+    background-color:white
+}
+
+
+header {
+    background-color: rgb(222, 226, 229);
+}
+
+
+section {
+    background-color: rgb(228, 228, 238);
+}
+
+#GestionPyA {
+    background-color: white;
+}
+
+.verde {
+    color: green;
+}
+
+#listaClientes{
+    color: green;
+}
+
+
+nav {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.menu {
+    padding-right: 20px;
+}
+
+
+#encabezado {
+    width: 100%;
+    height: 200px;
+}
+
+
+#tablainfo {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border: 1px solid black;
+}
+
+td{
+    padding-right: 50px;
+}
+
+#tablanombre {
+    padding-right: 250px;
+}
+
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    text-align: center;
+}
+@media screen and (max-width: 480px) {
+    main {
+        font-size: 10px;
+    }
+
+    #tablainfo {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    td {
+        padding-right: 10px;
+    }
+
+    #tablanombre {
+        padding-right: 10px;
+    }
+
+    nav {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-right: 5px;
+    }
+
+    header {
+        background-color: rgb(36, 100, 148);
+    }
+
+
+    section {
+        background-color: rgb(36, 100, 148);
+    }
+
+}
+
+@media print {
+
+    nav,
+    aside {
+        display: none;
+    }
+}
