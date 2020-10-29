@@ -3404,7 +3404,9 @@ input, select, textarea {
 		max-height: 50px;
 		min-height: 30px;
 		border-radius: 50%;
-		
+		image-rendering: auto;
+  		image-rendering: crisp-edges;
+  		image-rendering: pixelated;
 		
 	}
 
