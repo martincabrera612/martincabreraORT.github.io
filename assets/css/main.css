@@ -3407,10 +3407,7 @@ input, select, textarea {
 		width: 45px;
   		height: 45px;
 		image-rendering: auto;
-  		image-rendering: crisp-edges;
-		image-rendering: pixelated;
-		  
-		
+
 	}
 
 		#banner:after {
