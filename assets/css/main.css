@@ -3400,6 +3400,14 @@ input, select, textarea {
 		top: -3.25em;
 	}
 
+	.imgProfile {
+		max-height: 50px;
+		min-height: 30px;
+		border-radius: 50%;
+		
+		
+	}
+
 		#banner:after {
 			-moz-transition: opacity 2.5s ease;
 			-webkit-transition: opacity 2.5s ease;
