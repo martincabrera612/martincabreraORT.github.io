@@ -1,175 +1,177 @@
  <!--Martin Cabrera 185091
 Santiago Vairo 244023 -->
 
-<!DOCTYPE html>
-<html lang="es"> 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/clases.js"></script>
-    <script src="js/funciones.js"></script>
-    <title>Gesti&oacute;n de proyectos</title>
-</head>
-<body>
-    <!--Encabezado-->
-    <main>
-        <header> 
-        
-            <img id="encabezado" src="img/encabezado.jpg" alt="encabezado">    
-            <nav>
-                <a href=#CyE class="menu"> Clientes y Empleados </a>
-                <a href=#PyA class="menu"> Proyectos y Asignaciones </a>
-                <a href=#CeI class="menu"> Consultas e Informaci&oacute;n </a>   
-            </nav>   
-            
-        </header>
+ <!DOCTYPE html>
+ <html lang="es">
 
-    <!--Gestion de Clientes y Empleados-->
-    <section>
-    <h3 id="CyE">Gesti&oacute;n de Clientes y Empleados</h3>
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/estilos.css">
+     <script src="js/clases.js"></script>
+     <script src="js/funciones.js"></script>
+     <title>Gesti&oacute;n de proyectos</title>
+ </head>
 
-        <h4>Registro de Cliente</h4>
-            <form id="formRegistroClientes" >
-                <label for="CyEnombre">Nombre:</label>
-                <input type="text"  minlength="1"  maxlength="20" name="ClientesYEmpleados" id="CyEnombre" required >
-            
-                <label for="CyEtelefono">Tel&eacute;fono:</label>
-                <input type="text" minlength="8"  name="ClientesYEmpleados" id="CyEtelefono" required>
-            
-                <label for="CyEcorreo">Correo:</label>
-                <input type="email" name="ClientesYEmpleados" id="CyEcorreo" required>
-            
-                <label for="CyEweb">Web:</label>
-                <input type="text" name="ClientesYEmpleadosb" id="CyEweb" required>
-            
-                <button type="button" id="botonregistrarcliente">Registrar</button>
-            </form>
-    
-        <h4>Clientes Registrados</h4>
-            <ol  id="ListaClientesReg" class="verde">
-                
-            </ol>
+ <body>
+     <!--Encabezado-->
+     <main>
+         <header>
 
+             <img id="encabezado" src="img/bannerPr.png" alt="encabezado">
+             <nav>
+                 <a href=#CyE class="menu"> Clientes y Empleados </a>
+                 <a href=#PyA class="menu"> Proyectos y Asignaciones </a>
+                 <a href=#CeI class="menu"> Consultas e Informaci&oacute;n </a>
+             </nav>
 
-            <h4>Registro de Empleado</h4>
-            <form id= "formRegistroEmpleado">
-                <label for="nombreRegEmp">Nombre</label>
-                <input type="text" name="RegistroEmpleados"  minlength="1" maxlength="20" id ="nombreRegEmp"  required>
+         </header>
 
-                <label for ="telefonoRegEmp">Tel&eacute;fono</label>
-                <input type="text" name="RegistroEmpleados" id="telefonoRegEmp" minlength="8" required>
-                
-                <label for="salarioRegEmp">Salario</label>
-                <input type="text" name="RegistroEmpleados" id="salarioRegEmp" minlength="1" required> 
-                <input type="button" name ="RegistroEmpleados" id="botonRegEmp" value="Registrar">
+         <!--Gestion de Clientes y Empleados-->
+         <section>
+             <h3 id="CyE">Gesti&oacute;n de Clientes y Empleados</h3>
 
-            </form>
-    <br>
-    </section>
+             <h4>Registro de Cliente</h4>
+             <form id="formRegistroClientes">
+                 <label for="CyEnombre">Nombre:</label>
+                 <input type="text" minlength="1" maxlength="20" name="ClientesYEmpleados" id="CyEnombre" required>
+
+                 <label for="CyEtelefono">Tel&eacute;fono:</label>
+                 <input type="text" minlength="8" name="ClientesYEmpleados" id="CyEtelefono" required>
+
+                 <label for="CyEcorreo">Correo:</label>
+                 <input type="email" name="ClientesYEmpleados" id="CyEcorreo" required>
+
+                 <label for="CyEweb">Web:</label>
+                 <input type="text" name="ClientesYEmpleadosb" id="CyEweb" required>
+
+                 <button type="button" id="botonregistrarcliente">Registrar</button>
+             </form>
+
+             <h4>Clientes Registrados</h4>
+             <ol id="ListaClientesReg" class="verde">
+
+             </ol>
 
 
-    <!--Gestion de Proyectos y Asignaciones-->
-    <section id="GestionPyA">
-    <h3 id="PyA">Gesti&oacute;n de Proyectos y Asignaciones</h3>
-    
+             <h4>Registro de Empleado</h4>
+             <form id="formRegistroEmpleado">
+                 <label for="nombreRegEmp">Nombre</label>
+                 <input type="text" name="RegistroEmpleados" minlength="1" maxlength="20" id="nombreRegEmp" required>
+
+                 <label for="telefonoRegEmp">Tel&eacute;fono</label>
+                 <input type="text" name="RegistroEmpleados" id="telefonoRegEmp" minlength="8" required>
+
+                 <label for="salarioRegEmp">Salario</label>
+                 <input type="text" name="RegistroEmpleados" id="salarioRegEmp" minlength="1" required>
+                 <input type="button" name="RegistroEmpleados" id="botonRegEmp" value="Registrar">
+
+             </form>
+             <br>
+         </section>
 
 
-    <h4>Registro de Proyecto</h4>
-    <form id="formRegistroProyecto">
-        <label for="nombreProyecto">Nombre</label>
-        <input type="text" name = "RegProyectos" id="nombreProyecto" minlength="1" maxlength="20" required>
-
-        <label for="descripcionProyecto">Descripci&oacute;n</label>
-        <input type="text" name = "RegProyectos" id="descripcionProyecto" maxlength="35" >
-        <label for="area_tematica">Area Tematica</label>
-
-        <select name="RegProyectos" id="area_tematica">
-            <option value="Big Data" selected>1-Big data</option>
-            <option value="Machine learning">2-Machine learning</option>
-            <option value="IoT">3-IoT</option>
-            <option value="Data analysis">4-Data analysis</option>
-            <option value="Otros">5-Otros</option>
-        </select>
-
-        <label for="clienteProyecto">Cliente</label>
-        <select name = "RegProyectos" id="clienteProyecto">
-           <!--crea los elementos la function selectOption-->
-        </select>
-        
-
-
-        <label for="liderProyecto">Lider</label>
-        <select name = "RegProyectos" id="liderProyecto">
-           <!--crea los elementos la function selectOption-->
-        </select>
-        <input type="button" id="botonRegistrarProyecto" value="Registrar">
-    </form>
+         <!--Gestion de Proyectos y Asignaciones-->
+         <section id="GestionPyA">
+             <h3 id="PyA">Gesti&oacute;n de Proyectos y Asignaciones</h3>
 
 
 
-    <h4>Asignacion de Empleados en Proyecto</h4>
-    <form>
-        <label for="asignarProyecto">Proyecto</label>
-        <select name="RegEmpleadosEnProyecto" id="asignarProyecto">
-           
-        </select>
+             <h4>Registro de Proyecto</h4>
+             <form id="formRegistroProyecto">
+                 <label for="nombreProyecto">Nombre</label>
+                 <input type="text" name="RegProyectos" id="nombreProyecto" minlength="1" maxlength="20" required>
 
-         <select name="RegEmpleadosEnProyecto" id="asignarEmpleados">
+                 <label for="descripcionProyecto">Descripci&oacute;n</label>
+                 <input type="text" name="RegProyectos" id="descripcionProyecto" maxlength="35">
+                 <label for="area_tematica">Area Tematica</label>
 
+                 <select name="RegProyectos" id="area_tematica">
+                     <option value="Big Data" selected>1-Big data</option>
+                     <option value="Machine learning">2-Machine learning</option>
+                     <option value="IoT">3-IoT</option>
+                     <option value="Data analysis">4-Data analysis</option>
+                     <option value="Otros">5-Otros</option>
+                 </select>
 
-        </select>
-        <input type="button" value="Asignar" id = "botonAsignar">
-        </form>
-
-
-    <h4>Eliminaci&oacute;n de Empleados en Proyecto</h4>
-        <label for="proyectoEliminar">Proyecto</label>
-        <select name="EliminarEmpEnProyecto" id="proyectoEliminar">
-            
-        </select>
-
-        <label for="empleadosEliminar">Empleados de proyecto</label>
-        <select name="EliminarEmpEnProyecto" id="empleadosEliminar">
-            
-        </select>
-        <input type="button" value="Eliminar" id="botonEliminar">
-    </section>
-
-    <!--Consultas e Informacion-->
-    <section>
-    <h3 id="CeI">Consultas e informaci&oacute;n</h3>
-    <h4>Consulta de personas en proyecto</h4>
-        <input type="radio" name="PersonasEnProyecto" value="minimo" id="radioMin" checked="checked"> Minimo
-        <input type="radio" name="PersonasEnProyecto" value="maximo" id="radioMax" > Maximo
-        <ol id="listaMaxMin"></ol>
-        <p id="cantidadEmpleados"></p>
-        
-        <h4>Consulta de descripci&oacute;n</h4>
-        <label for="secuencia">Secuencia</label>
-        <input type="text" id="secuencia">
-        <input type="button" value="Consultar">
-        <h4><b>Generacion de QR</b></h4><br>
-        <label for="clienteQR">Seleccione la empresa: </label>
-        <select id="clienteQR" >
+                 <label for="clienteProyecto">Cliente</label>
+                 <select name="RegProyectos" id="clienteProyecto">
+                     <!--crea los elementos la function selectOption-->
+                 </select>
 
 
-        </select>
-        <input type="button" id="botonQR" value="Generar Codigo QR">
 
-        <h4>Informaci&oacute;n de Empleados</h4>
-        <table id="tablainfo">
-            <thead> 
-                <tr>
-                    <td id="tablanombre">Nombre</td>
-                    <td>Salario</td>
-                    <td>Cantidad</td>
-                    <td>Estado</td>
-                    
-                </tr>
-            </thead>
-            <tbody id ="bodyTabla">
-             <!--   <tr>
+                 <label for="liderProyecto">Lider</label>
+                 <select name="RegProyectos" id="liderProyecto">
+                     <!--crea los elementos la function selectOption-->
+                 </select>
+                 <input type="button" id="botonRegistrarProyecto" value="Registrar">
+             </form>
+
+
+
+             <h4>Asignacion de Empleados en Proyecto</h4>
+             <form>
+                 <label for="asignarProyecto">Proyecto</label>
+                 <select name="RegEmpleadosEnProyecto" id="asignarProyecto">
+
+                 </select>
+
+                 <select name="RegEmpleadosEnProyecto" id="asignarEmpleados">
+
+
+                 </select>
+                 <input type="button" value="Asignar" id="botonAsignar">
+             </form>
+
+
+             <h4>Eliminaci&oacute;n de Empleados en Proyecto</h4>
+             <label for="proyectoEliminar">Proyecto</label>
+             <select name="EliminarEmpEnProyecto" id="proyectoEliminar">
+
+             </select>
+
+             <label for="empleadosEliminar">Empleados de proyecto</label>
+             <select name="EliminarEmpEnProyecto" id="empleadosEliminar">
+
+             </select>
+             <input type="button" value="Eliminar" id="botonEliminar">
+         </section>
+
+         <!--Consultas e Informacion-->
+         <section>
+             <h3 id="CeI">Consultas e informaci&oacute;n</h3>
+             <h4>Consulta de personas en proyecto</h4>
+             <input type="radio" name="PersonasEnProyecto" value="minimo" id="radioMin" checked="checked"> Minimo
+             <input type="radio" name="PersonasEnProyecto" value="maximo" id="radioMax"> Maximo
+             <ol id="listaMaxMin"></ol>
+             <p id="cantidadEmpleados"></p>
+
+             <h4>Consulta de descripci&oacute;n</h4>
+             <label for="secuencia">Secuencia</label>
+             <input type="text" id="secuencia">
+             <input type="button" value="Consultar">
+             <h4><b>Generacion de QR</b></h4><br>
+             <label for="clienteQR">Seleccione la empresa: </label>
+             <select id="clienteQR">
+
+
+             </select>
+             <input type="button" id="botonQR" value="Generar Codigo QR">
+
+             <h4>Informaci&oacute;n de Empleados</h4>
+             <table id="tablainfo">
+                 <thead>
+                     <tr>
+                         <td id="tablanombre">Nombre</td>
+                         <td>Salario</td>
+                         <td>Cantidad</td>
+                         <td>Estado</td>
+
+                     </tr>
+                 </thead>
+                 <tbody id="bodyTabla">
+                     <!--   <tr>
                     <td>Florencia Conrado</td>
                     <td>4100</td>
                     <td>2</td>
@@ -193,21 +195,25 @@ Santiago Vairo 244023 -->
                     <td>1</td>
                     <td><img src="img/semaforoverde.jpg" alt="semaforo"></td>
                 </tr>
-            -->   
-            </tbody>
-            
-        </table>
-    <p><strong>Informaci&oacute;n de &aacute;rea tem&aacute;tica m&aacute;s frecuente</strong></p>
-    <p>Tem&aacute;ticas: 1 5</p>
-    </section>
-    <footer>
-        <p>Obligatorio de Programaci&oacute;n 1- Realizado por Martin Cabrera (185091) y Santiago Vairo (244023)</p>
-        <p> <a href="https://www.facebook.com/" target="_blank"><img src="img/logos/fblogo.jpg" alt="logofb"></a>
-            <a href="https://twitter.com/" target="_blank"> <img src="img/logos/twitterlogo.jpg" alt="logotwitter"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="img/logos/linkedinlogo.jpg" alt="logolinkedin"></a>
-        </p>
+            -->
+                 </tbody>
 
-    </footer>
-</main>    
-</body>
-</html>
+             </table>
+             <p><strong>Informaci&oacute;n de &aacute;rea tem&aacute;tica m&aacute;s frecuente</strong></p>
+             <p>Tem&aacute;ticas: 1 5</p>
+         </section>
+         <footer>
+             <p>Obligatorio de Programaci&oacute;n 1- Realizado por Martin Cabrera (185091) y Santiago Vairo (244023)
+             </p>
+             <p> <a href="https://www.facebook.com/" target="_blank"><img src="img/logos/fblogo.jpg" alt="logofb"></a>
+                 <a href="https://twitter.com/" target="_blank"> <img src="img/logos/twitterlogo.jpg"
+                         alt="logotwitter"></a>
+                 <a href="https://www.linkedin.com/" target="_blank"><img src="img/logos/linkedinlogo.jpg"
+                         alt="logolinkedin"></a>
+             </p>
+
+         </footer>
+     </main>
+ </body>
+
+ </html>
