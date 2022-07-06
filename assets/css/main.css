@@ -110,6 +110,10 @@ section {
 }
 
 
+#lastOne {
+  width: 100%;
+}
+
 #fotoPerfil {
   margin-right: 10px;
   margin-top: 2px;
@@ -133,7 +137,7 @@ section {
 }
 
 ::-webkit-scrollbar{
-	width: 5px;
+	width: 5px; 
 }
 
 body {
