@@ -231,6 +231,23 @@
 
 		});
 
+		const zoomFoto = document.querySelector("#fotoPerfil");
+		const divZoom = document.querySelector("#phPerfil");
+		zoomFoto.addEventListener('click' , zooming);
+		
+
+
+		function zooming () {
+			zoomFoto.classList.add('zoom', 'imgfProfile');
+			divZoom.classList.add('zoomOnDiv');
+			setTimeout(() => {
+				zoomFoto.classList.remove('zoom');
+				divZoom.classList.remove('zoomOnDiv');
+			}, 4000);
+		}
+
+		
+		
 	// Menu.
 		var $menu = $('#menu'),
 			$menuInner;

@@ -109,20 +109,38 @@ section {
   display: block;
 }
 
-
 #lastOne {
   width: 100%;
 }
 
+
 #fotoPerfil {
   margin-right: 10px;
-  margin-top: 2px;
+  margin-top: 15px;
   border: 2px solid rgb(0, 0, 0); 
+  transition: transform 1s; 
 }
+
 
 #fotoPerfil:hover {
   border: 2px solid rgb(116, 183, 223); 
 }
+
+.zoomOnDiv {
+  padding: 50px;
+  border: 10px solid rgba(255, 255, 255, 0);
+  transition: transform 1s; 
+}
+
+.zoom {
+  transform: scale(4.0);
+  transition: transform 1s; 
+  width: 200px;
+  height: 200px; 
+  margin: 100px;
+  image-rendering: auto;
+}
+
 
 
 ::-webkit-scrollbar-thumb{
